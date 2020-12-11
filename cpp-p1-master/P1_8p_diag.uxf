@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>11</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>682</x>
+      <y>330</y>
+      <w>176</w>
+      <h>165</h>
+    </coordinates>
+    <panel_attributes>Gra
+--
++akcja_gracza() : void
++get_stan() : bool
+
+-tick() : void
+--
+
+-stan : bool
+-firma : Firma*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>935</x>
+      <y>198</y>
+      <w>374</w>
+      <h>649</h>
+    </coordinates>
+    <panel_attributes>Firma
+--
++drukuj_pracownikow() const : void
+
++wez_kredyt(double kwota, int czas_splaty) : void
+
++zatrudnij_inz(const Inz&amp;) : void
++zatrudnij_mag(const Mag&amp;) : void
++zatrudnij_mkt(const mkt&amp;) : void
++zatrudnij_rob(const Rob&amp;) : void
+
++zaplac_wynagrodzenie() : void
++otrzymaj_przychod() : void
++splac_raty() : void
+
++get_stan_konta() const : double
++wartosc_firmy() : double
+
+-oblicz_przychod() const : double
+--
+
+-stan_konta : double
+
+-kredyty : Kredyt[ ]
+-n_kredytow : int
+
+-n_inz : int
+-n_mag : int
+-n_mkt : int
+-n_rob : int
+-inz : Inz[ ]
+-mag : Mag[ ]
+-mkt : Mkt[ ]
+-rob : Rob[ ]
+
+historia_przych : double[N]
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>671</x>
+      <y>198</y>
+      <w>187</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Kredyt
+--
++splac_rate() : double
+--
+
+-dlug : double
+-pozostale_raty : int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>440</x>
+      <y>561</y>
+      <w>176</w>
+      <h>121</h>
+    </coordinates>
+    <panel_attributes>Inz
+--
++print() : void
+
+--
+-imie : std::string
+-wydzial : std::string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>440</x>
+      <y>704</y>
+      <w>176</w>
+      <h>121</h>
+    </coordinates>
+    <panel_attributes>Mag
+--
++print() : void
+
+--
+-imie : std::string
+-obsl_widl : bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>649</x>
+      <y>561</y>
+      <w>176</w>
+      <h>121</h>
+    </coordinates>
+    <panel_attributes>Mkt
+--
++print() : void
+
+--
+-imie : std::string
+-follows : int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>649</x>
+      <y>704</y>
+      <w>176</w>
+      <h>121</h>
+    </coordinates>
+    <panel_attributes>Rob
+--
++print() : void
+
+--
+-imie : std::string
+-but : double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>407</x>
+      <y>506</y>
+      <w>451</w>
+      <h>341</h>
+    </coordinates>
+    <panel_attributes>Typy pracowników</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>847</x>
+      <y>682</y>
+      <w>110</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>847</x>
+      <y>253</y>
+      <w>110</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>847</x>
+      <y>396</y>
+      <w>110</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>440</y>
+      <w>88</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+</diagram>
