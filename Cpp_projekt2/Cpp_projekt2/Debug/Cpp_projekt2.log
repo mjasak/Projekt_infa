@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\jasak\meillocal\inf\projekt2\cpp_projekt2\cpp_projekt2\bankomat.hpp(288): warning C4018: ">": niezgodność typu ze znakiem/bez znaku
+c:\users\jasak\meillocal\inf\projekt2\cpp_projekt2\cpp_projekt2\bankomat.hpp(320): warning C4715: "Bankomat::wyplac_z_karty”: niewszystkie ścieżki kodu zwracają wartość
+  Cpp_projekt2.vcxproj -> C:\Users\jasak\MEILlocal\INF\Projekt2\Cpp_projekt2\Debug\Cpp_projekt2.exe
